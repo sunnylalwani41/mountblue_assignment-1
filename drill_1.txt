@@ -1,0 +1,31 @@
+> cd = Navigate to home directory of the user.
+> mkdir hello= Create a directory, name of hello.
+> cd hello = Navigate to hello directory.
+> mkdir five one = Create two directory, name of five and one.
+> cd five = Navigate to five directory.
+> mkdir six = Create a directory, name of six.
+> touch c.txt = Create a file, name of c.txt.
+> cd six = Navigate to six directory.
+> mkdir seven = Create a directory, name of seven.
+> cd sesven = Navigate to seven directory.
+> touch error.log = Create a file, name of error.log.
+> cd = Navigate to home of the user.
+> cd ~/hello/one = Navigate to one directory of the user.
+> touch a.txt b.txt && mkdir two= Create two file, name of a.txt and b.txt and one directory, name of two.
+> cd two = Navigate to two directory
+> touch d.txt && mkdir three = Create a file b.txt and directory three
+> cd three = Navigate into three directory.
+> touch e.txt && mkdir four = Create a file e.txt and a directory four.
+> cd four = Navigate into four directory.
+> touch access.log = Create a file access.log
+> find ~/hello -type f -name "*.log" -exec rm {} \; = find ~/hello, this part will search in ~/hello directory.
+-type f, this flag is used with find command, it will search file.
+-name "*.log", by this flag, find will search file which have .log extension.
+-exec rm {} \, this part execute the remove (rm) command. {}, this part represent the current file being processed.
+\, it represent end of execution.
+> echo "my message" >> ~/hello/one/a.txt = 
+echo "my message", echo print the text or message to the terminal.
+>>, it will redirect the output and append in this location ~/hello/one/a.txt.
+> rm -r ~/hello/five = remove five directory.
+> mv ~/hello/one ~/hello/uno = It will rename one into uno.
+> mv ~/hello/uno/a.txt ~/hello/uno/two = It will move a.txt into two.
